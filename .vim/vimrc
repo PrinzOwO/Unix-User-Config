@@ -386,6 +386,10 @@ inoremap <silent> <F6> <C-o>:NERDTree<CR>
 let g:ycm_global_ycm_extra_conf='~/Unix-User-Config/.vim/bundle/YouCompleteMe/third_party/ycmd/examples/.ycm_extra_conf.py'
 let g:ycm_enable_diagnostic_signs = 0
 let g:ycm_enable_diagnostic_highlighting = 0
+let g:ycm_semantic_triggers =  {
+			\ 'c,cpp,python,java,go,erlang,perl': ['re!\w{2}'],
+			\ 'cs,lua,javascript': ['re!\w{2}'],
+			\ }
 
 " --- Ag: Search current word
 map <silent> <C-f> :Ag <cword><cr>
