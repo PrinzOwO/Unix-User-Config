@@ -488,3 +488,8 @@ set t_Co=256          " 256 color mode
 " Colors
 
 hi Comment ctermfg=lightblue
+
+" Vimdiff
+if &diff
+    colorscheme evening
+endif
